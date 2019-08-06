@@ -1,6 +1,6 @@
-import StyleSheet from "react-360";
+import { StyleSheet } from "react-360";
 
-export default (styles = StyleSheet.create({
+export const styles = StyleSheet.create({
   panel: {
     // Fill the entire surface
     width: 1000,
@@ -18,4 +18,4 @@ export default (styles = StyleSheet.create({
   greeting: {
     fontSize: 30
   }
-}));
+});

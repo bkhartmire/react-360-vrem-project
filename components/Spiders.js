@@ -5,11 +5,13 @@ import styles from "../styles";
 export default class Spiders extends React.Component {
   render() {
     return (
-      <View style={styles.panel}>
-        <View style={styles.greeting}>
-          <Text style={styles.greeting}>Spiders</Text>
+      <div id="spiders">
+        <View style={styles.panel}>
+          <View style={styles.greeting}>
+            <Text style={styles.greeting}>Spiders</Text>
+          </View>
         </View>
-      </View>
+      </div>
     );
   }
 }

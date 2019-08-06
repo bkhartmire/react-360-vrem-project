@@ -9,7 +9,8 @@ Components:
 
 App
 ==>home button (rendered if !this.state.home)
-==>selection board
+==>selection board (Options List)
+==>room
 ====>driving
 ====>spiders
 ====>heights

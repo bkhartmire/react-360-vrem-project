@@ -1,26 +1,33 @@
 import React from "react";
-import { AppRegistry, Environment, asset } from "react-360";
+import { Environment, asset } from "react-360";
 import Select from "./Select";
+import Room from "./Room";
 // import GazeButton from "react-360-gaze-button";
 
-export default class react_360_project extends React.Component {
+export default class App extends React.Component {
   state = {
-    title: "Select your phobia",
-    environment: "360_world"
+    environment: "360_world",
+    home: true
   };
 
-  changeEnvironment = selection => {
-    Environment.setBackgroundImage(asset(`${selection}.jpg`));
-    this.setState({ title: selection });
+  changeEnvironment = (type, env) => {
+    env === "360_world"
+      ? this.setState({ environment: env, home: true })
+      : this.setState({ environment: env, home: false });
+    if (type === "photo") Environment.setBackgroundImage(asset(`${env}.jpg`));
   };
 
   render() {
     return (
       <React.Fragment>
-        <Select changeEnv={env => this.changeEnvironment(env)} />
+        {this.state.home ? (
+          <Select
+            changeEnv={(type, env) => this.changeEnvironment(type, env)}
+          />
+        ) : (
+          <Room env={this.state.environment} />
+        )}
       </React.Fragment>
     );
   }
 }
-
-AppRegistry.registerComponent("react_360_project", () => react_360_project);
