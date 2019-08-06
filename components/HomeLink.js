@@ -6,7 +6,14 @@ export default class HomeLink extends React.Component {
   render() {
     return (
       <View style={styles.greetingBox}>
-        <VrButton onClick={() => this.props.changeEnv("photo", "360_world")}>
+        <VrButton
+          onClick={() =>
+            this.props.changeEnv("photo", {
+              name: "Home",
+              fileName: "360_world.jpg"
+            })
+          }
+        >
           <Text style={styles.greeting}>Home</Text>
         </VrButton>
       </View>

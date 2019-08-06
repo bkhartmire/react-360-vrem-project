@@ -10,10 +10,10 @@ export default class Room extends React.Component {
     return (
       <React.Fragment>
         <HomeLink changeEnv={(type, env) => this.props.changeEnv(type, env)} />
-        {this.props.env === "heights" && <Heights />}
-        {this.props.env === "spiders" && <Spiders />}
-        {this.props.env === "drive" && <Drive />}
-        {this.props.env === "public_speaking" && <PublicSpeaking />}
+        {this.props.env === "Heights" && <Heights />}
+        {this.props.env === "Spiders" && <Spiders />}
+        {this.props.env === "Drive" && <Drive />}
+        {this.props.env === "Public Speaking" && <PublicSpeaking />}
       </React.Fragment>
     );
   }

@@ -1,17 +1,12 @@
-VRET Sample Code.
-=> homepage? (calm beach?)
-=> driving
-=> spiders (models)
-=> heights
-=> public speaking
+Component Layout:
 
-Components:
+set up redux?
 
-App
+App(photo)
 ==>home button (rendered if !this.state.home)
 ==>selection board (Options List)
-==>room
-====>driving
-====>spiders
-====>heights
-====>public speaking
+==>room container
+====>driving(video)
+====>spiders(photo with models)
+====>heights(video)
+====>public speaking (video)
