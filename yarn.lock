@@ -5005,6 +5005,11 @@ rc@^1.0.1, rc@^1.1.2, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-360-gaze-button@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-360-gaze-button/-/react-360-gaze-button-1.0.0.tgz#db0b61eb7825c8d613763f514a0f26d4f4f3d97f"
+  integrity sha512-9KOfQrEU+g2/4KSNfHrTJqAa3NX1RXpmeAwOep4Yd4rSYybbib4D9OsoUH3IMRcTF85sSsdeD9OkcaEEqD0erA==
+
 react-360-web@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/react-360-web/-/react-360-web-1.1.0.tgz#fab05a93e7aa9cf2da4ed49f204b51817d59f3d9"
