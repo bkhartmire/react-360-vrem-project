@@ -25,7 +25,10 @@ export default class App extends React.Component {
             changeEnv={(type, env) => this.changeEnvironment(type, env)}
           />
         ) : (
-          <Room env={this.state.environment} />
+          <Room
+            env={this.state.environment}
+            changeEnv={(type, env) => this.changeEnvironment(type, env)}
+          />
         )}
       </React.Fragment>
     );
