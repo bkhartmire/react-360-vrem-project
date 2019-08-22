@@ -3,13 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-360/scripts/packager.js",
+    "dev": "node node_modules/react-360/scripts/packager.js",
     "bundle": "node node_modules/react-360/scripts/bundle.js",
+    "deploy": "node deploy.js",
     "open": "node -e \"require('xopen')('http://localhost:8081/index.html')\"",
     "devtools": "react-devtools",
     "test": "jest"
   },
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "react": "16.3.2",
     "react-360": "~1.1.0",
     "react-360-gaze-button": "^1.0.0",

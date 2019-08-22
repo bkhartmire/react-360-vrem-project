@@ -14,7 +14,7 @@ export default class Select extends React.Component {
               <Option
                 key={option.id}
                 room={option}
-                changeEnv={(type, room) => this.props.changeEnv(type, room)}
+                changeEnv={room => this.props.changeEnv(room)}
               />
             );
           })}

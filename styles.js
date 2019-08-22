@@ -13,7 +13,8 @@ export const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: "#000000",
     borderColor: "#639dda",
-    borderWidth: 2
+    borderWidth: 2,
+    margin: 10
   },
   greeting: {
     fontSize: 30

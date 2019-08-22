@@ -4,12 +4,11 @@ import { styles } from "../styles";
 
 export default class Drive extends React.Component {
   render() {
-    return (
-      <View style={styles.panel}>
-        <View style={styles.greeting}>
-          <Text style={styles.greeting}>Drive</Text>
-        </View>
-      </View>
-    );
+    return;
+    // <View style={styles.panel}>
+    //   <View style={styles.greeting}>
+    //     <Text style={styles.greeting}>Drive</Text>
+    //   </View>
+    // </View>
   }
 }

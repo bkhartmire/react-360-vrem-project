@@ -5,7 +5,7 @@ import { styles } from "../styles";
 export default class Option extends React.Component {
   render() {
     return (
-      <VrButton onClick={() => this.props.changeEnv("photo", this.props.room)}>
+      <VrButton onClick={() => this.props.changeEnv(this.props.room)}>
         <Text style={styles.greeting}>{this.props.room.name}</Text>
       </VrButton>
     );
