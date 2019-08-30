@@ -2,9 +2,8 @@
 // If you want to modify your application's content, start in "index.js"
 
 import { ReactInstance } from "react-360-web";
-import WebVRPolyfill from "webvr-polyfill";
 import SimpleRayCaster from "simple-raycaster";
-
+import WebVRPolyfill from "webvr-polyfill";
 const polyfill = new WebVRPolyfill();
 
 function init(bundle, parent, options = {}) {

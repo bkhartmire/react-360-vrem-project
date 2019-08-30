@@ -6,7 +6,6 @@ import Option from "./Option";
 export default class Select extends React.Component {
   render() {
     return (
-      // <View style={styles.panel}>
       <React.Fragment>
         <Text style={styles.greeting}>Select Your Enviroment</Text>
         <View style={styles.greetingBox}>
@@ -21,7 +20,6 @@ export default class Select extends React.Component {
           })}
         </View>
       </React.Fragment>
-      // </View>
     );
   }
 }
