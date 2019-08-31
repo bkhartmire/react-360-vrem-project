@@ -7,8 +7,8 @@ export default class Select extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Text style={styles.greeting}>Select Your Enviroment</Text>
         <View style={styles.greetingBox}>
+          <Text style={styles.title}>Select Your Enviroment </Text>
           {this.props.options.map(option => {
             return (
               <Option

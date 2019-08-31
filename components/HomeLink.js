@@ -13,7 +13,7 @@ export default class HomeLink extends React.Component {
     this.props.changeEnv({
       name: "Home",
       type: "photo",
-      fileName: "360_world.jpg"
+      fileName: "background.jpg"
     });
   };
   render() {
@@ -23,9 +23,7 @@ export default class HomeLink extends React.Component {
           duration={1000}
           onClick={() => this.setGazed()}
           render={(remainingTime, isGazed) => (
-            <Text style={styles.greeting}>
-              {isGazed ? remainingTime : "Home"}
-            </Text>
+            <Text style={styles.title}>{isGazed ? remainingTime : "Home"}</Text>
           )}
         />
       </View>

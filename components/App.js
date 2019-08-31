@@ -12,10 +12,10 @@ import Room from "./Room";
 
 export default class App extends React.Component {
   state = {
-    environment: "360_world",
+    environment: "background",
     home: true,
     rooms: [
-      { id: 1, name: "Home", type: "photo", fileName: "360_world.jpg" },
+      { id: 1, name: "Home", type: "photo", fileName: "background.jpg" },
       { id: 2, name: "Heights", type: "video", fileName: "heights.mp4" },
       // { id: 3, name: "Spiders", type: "photo", fileName: "spiders.jpg" },
       { id: 4, name: "Drive", type: "video", fileName: "drive.mp4" },

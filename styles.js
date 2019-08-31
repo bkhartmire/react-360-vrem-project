@@ -10,13 +10,22 @@ export const styles = StyleSheet.create({
     alignItems: "center"
   },
   greetingBox: {
-    padding: 20,
-    backgroundColor: "#000000",
-    borderColor: "#639dda",
+    padding: 30,
+    backgroundColor: "white",
+    opacity: 0.8,
+
+    borderColor: "white",
+    borderRadius: 5,
     borderWidth: 2,
     margin: 10
   },
+  title: {
+    fontSize: 50,
+    marginBottom: 10,
+    color: "black"
+  },
   greeting: {
-    fontSize: 30
+    fontSize: 30,
+    color: "black"
   }
 });
